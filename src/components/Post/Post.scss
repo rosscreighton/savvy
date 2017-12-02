@@ -1,0 +1,74 @@
+@import '../../stylesheets/breakpoints.scss';
+@import '../../stylesheets/helpers.scss';
+
+.container {
+}
+
+.content {
+  @include flex-row;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  margin-top: 21px;
+}
+
+.suggested {
+  display: none;
+  width: 20%;
+  font-size: 18px;
+
+  @include breakpoint-desktop {
+    display: block;
+  }
+}
+
+.suggested-items {
+  font-family: 'Arvo', serif;
+}
+
+.suggested-item {
+  display: block;
+  margin: 7px 0;
+  text-decoration: none;
+  color: black;
+  &:visited { color: black; }
+
+  &:first-of-type {
+    margin-top: 11px;
+  }
+}
+
+.post {
+  @include breakpoint-desktop {
+    width: 75%;
+  }
+}
+
+.title {
+  font-size: 22px;
+  color: black;
+  letter-spacing: -0.09px;
+
+  @include breakpoint-desktop {
+    letter-spacing: -0.1px;
+    font-size: 26px;
+  }
+}
+
+.body {
+  margin-top: 18px;
+  font-family: 'Arvo', serif;
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: -0.06px;
+
+  @include breakpoint-desktop {
+    font-size: 22px;
+    letter-spacing: -0.09px;
+  }
+
+  a {
+    color: #727272;
+    text-decoration: none;
+  }
+}

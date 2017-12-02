@@ -1,0 +1,18 @@
+{
+  "redux": {
+    "title": "ReduxJS",
+    "body": "Redux is a JavaScript library that aims to simplify how we manage stateful data. Redux keeps all of our data in a single JS object called the Store. A single function, the reducer, is responsible for making modifications to the Store. We trigger the reducer by 'dispatching' an action - a JS object that describes how our data should change. The reducer function receives the action as an argument and makes changes accordingly. Other parts of the code (usually <a href='/savvy/react'>React</a> Components) can subscribe to data in the Store. When data changes, Redux notifies subscribers of the change."
+  },
+  "react": {
+    "title": "ReactJS",
+    "body": "React is a JavaScript library that aims to help us write user interface(UI) code. React’s fundamental building block is the Component which, in its simplest form, is a JavaScript function that generates UI code (usually HTML). The generated UI code is then rendered by the device. A Component represents a small portion of the UI. Many Components are used together, or composed, to create entire views or applications. React Components can receive data that is used to generate the UI code. Whenever a Component’s data changes, it will automatically regenerate the UI code."
+  },
+  "css-modules": {
+    "title": "CSS Modules",
+    "body": "CSS Modules allows us to write CSS rules that are restricted to a certain piece of UI. It is not an official specification or browser implementation, but rather a process enabled by a build tool like Webpack. In contrast to a regular CSS selector, which can match any element, a CSS Modules selector can only match elements in a specific part of the UI (e.g. in a specific <a href='/savvy/react'>React</a> Component). Build tools accomplish this by transforming the selectors we write into new, globally unique selectors and then applying the new selector to the associated UI element."
+  },
+  "flexbox": {
+    "title": "CSS Flexbox",
+    "body": "Flexbox is a CSS layout mode that aims to simplify responsive layout development. Flexbox layouts use two types of elements: flex containers and flex items. Flex containers have a primary axis (called the main axis) and a secondary axis (called the cross axis). Flex items are nested inside flex containers and can be aligned, sized, scaled, and ordered relative to the main or cross axis of the container. The visual order of flex items on the screen is independent of their HTML source order."
+  }
+}

@@ -1,0 +1,20 @@
+@import '../../stylesheets/variables.scss';
+@import '../../stylesheets/breakpoints.scss';
+@import '../../stylesheets/helpers.scss';
+
+.container {
+  @include centered-flex-row;
+  height: 56px;
+  background: $blue;
+}
+
+.content {
+  width: 80%;
+  font-size: 16px;
+  color: #EFEFEF;
+  letter-spacing: -0.12px;
+
+  @include breakpoint-desktop {
+    font-size: 26px;
+  }
+}

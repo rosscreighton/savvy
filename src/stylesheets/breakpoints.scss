@@ -1,0 +1,11 @@
+@mixin breakpoint-desktop {
+  @media (min-width: 900px) {
+    @content
+  }
+}
+
+@mixin breakpoint-xl {
+  @media (min-width: 1440px) {
+    @content
+  }
+}

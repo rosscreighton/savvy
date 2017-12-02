@@ -1,0 +1,25 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": "> 1%"
+        },
+      }
+    ],
+    "stage-0",
+    "react"
+  ],
+  "plugins": [
+    ["react-css-modules", {
+      "filetypes": {
+        ".scss": {
+          "syntax": "postcss-scss"
+        }
+      },
+      "generateScopedName": "[hash]",
+      "webpackHotModuleReloading": true
+    }]
+  ]
+}

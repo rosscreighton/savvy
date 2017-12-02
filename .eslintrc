@@ -1,0 +1,14 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "globals": {
+    "document": false
+  },
+  "rules": {
+    "consistent-return": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/no-unresolved": ["error", { "ignore": ["react"] }],
+    "import/extensions": ["error", { "ignore": ["react"] }],
+    "react/jsx-filename-extension": "off"
+  }
+}
