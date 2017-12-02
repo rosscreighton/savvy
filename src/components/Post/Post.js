@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import posts from '../../data/posts.json';
 import NavHeader from '../NavHeader';
 import './Post.scss';
@@ -24,10 +25,13 @@ export default function Post({ slug }) {
           <div styleName="title">
             {post.title}
           </div>
-          <div styleName="body" dangerouslySetInnerHTML={{ __html: post.body }}>
-          </div>
+          <div styleName="body" dangerouslySetInnerHTML={{ __html: post.body }} />
         </div>
       </div>
     </div>
   );
 }
+
+Post.propTypes = {
+  slug: PropTypes.string.isRequired,
+};
