@@ -1,4 +1,8 @@
 {
+  "savvy": {
+    "title": "What is Savvy?",
+    "body": ""
+  },
   "redux": {
     "title": "ReduxJS",
     "body": "Redux is a JavaScript library that aims to simplify how we manage stateful data. Redux keeps all of our data in a single JS object called the Store. A single function, the reducer, is responsible for making modifications to the Store. We trigger the reducer by 'dispatching' an action - a JS object that describes how our data should change. The reducer function receives the action as an argument and makes changes accordingly. Other parts of the code (usually <a href='/savvy/react'>React</a> Components) can subscribe to data in the Store. When data changes, Redux notifies subscribers of the change."

@@ -3,6 +3,7 @@ import Router from 'preact-router';
 import Home from '../Home';
 import Post from '../Post';
 import RequestSavvy from '../RequestSavvy';
+import WriteSavvy from '../WriteSavvy';
 
 export default function SavvyRouter() {
   return (
@@ -10,6 +11,7 @@ export default function SavvyRouter() {
       <Home path="/" />
       <Post path="/savvy/:slug" />
       <RequestSavvy path="/request" />
+      <WriteSavvy path="/write" />
     </Router>
   );
 }

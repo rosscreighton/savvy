@@ -1,0 +1,38 @@
+@import '../../stylesheets/variables.scss';
+@import '../../stylesheets/breakpoints.scss';
+
+.container {
+
+}
+
+.content {
+  width: 80%;
+  margin: auto;
+  margin-top: 21px;
+
+  textarea, input {
+    display: block;
+    width: calc(100% - 14px);
+    height: 40px;
+    margin: 10px 0;
+    border: 1px solid $blue;
+    border-radius: 4px;
+    padding-left: 10px;
+
+    @include breakpoint-desktop {
+      width: 300px;
+    }
+  }
+
+  textarea {
+    height: 200px;
+  }
+
+  :global(.button) {
+    width: 100%;
+
+    @include breakpoint-desktop {
+      width: 200px;
+    }
+  }
+}
