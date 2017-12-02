@@ -2,18 +2,6 @@
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const babel = require('babel-core');
-
-function extractRoutes() {
-  const routes = [];
-  babel.transformFileSync('./src/components/Router/Router.js')
-    .code
-    // not replacing anything. this is simpler that string.exec() + a while loop
-    .replace(/ path: '\/(\w+)' /g, (match, route) => routes.push(route));
-  return routes;
-}
-
-const routes = extractRoutes();
 
 module.exports = {
   entry: {
@@ -46,7 +34,5 @@ module.exports = {
   plugins: [
     new HTMLWebpackPlugin({ template: './src/index.template.html', inject: false, }),
     //new CopyWebpackPlugin([{ from: './src/images', to: 'images' }]),
-  ].concat(routes.map(route => (
-    new HTMLWebpackPlugin({ template: './src/index.template.html', filename: `${route}/index.html` })
-  ))),
+  ],
 };

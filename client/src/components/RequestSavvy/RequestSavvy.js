@@ -6,6 +6,7 @@ import './RequestSavvy.scss';
 export default class RequestSavvy extends Component {
   state = {
     value: '',
+    email: '',
   }
   render() {
     return (
@@ -17,6 +18,12 @@ export default class RequestSavvy extends Component {
             onChange={e => this.setState({ value: e.target.value })}
             type="text"
             value={this.state.value}
+          />
+          <div>Your email:</div>
+          <input
+            type="email"
+            value={this.state.email}
+            onChange={e => this.setState({ email: e.target.value })}
           />
           <Button>Submit</Button>
         </div>

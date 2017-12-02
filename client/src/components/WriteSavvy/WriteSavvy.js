@@ -7,6 +7,7 @@ export default class WriteSavvy extends Component {
   state = {
     title: '',
     body: '',
+    email: '',
   }
 
   render() {
@@ -15,6 +16,12 @@ export default class WriteSavvy extends Component {
         <NavHeader />
         <div styleName="content">
           <div>Write a Savvy</div>
+          <div>Your email:</div>
+          <input
+            type="email"
+            value={this.state.email}
+            onChange={e => this.setState({ email: e.target.value })}
+          />
           <div>Title:</div>
           <input
             type="text"
