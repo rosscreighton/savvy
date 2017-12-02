@@ -44,7 +44,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new HTMLWebpackPlugin({ template: './src/index.template.html' }),
+    new HTMLWebpackPlugin({ template: './src/index.template.html', inject: false, }),
     //new CopyWebpackPlugin([{ from: './src/images', to: 'images' }]),
   ].concat(routes.map(route => (
     new HTMLWebpackPlugin({ template: './src/index.template.html', filename: `${route}/index.html` })

@@ -28,6 +28,7 @@ module.exports = merge(shared, {
   devServer: {
     port: 4000,
     hot: true,
+    historyApiFallback: true,
   },
   devtool: 'eval-source-map',
   plugins: [
