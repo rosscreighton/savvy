@@ -1,8 +1,16 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions */
+
 import React from 'react';
 import PropTypes from 'prop-types';
+import { route } from 'preact-router';
 import posts from '../../data/posts.json';
 import NavHeader from '../NavHeader';
 import './Post.scss';
+
+const onClick = (e) => {
+  e.preventDefault();
+  route(e.target.pathname);
+};
 
 export default function Post({ slug }) {
   const post = posts[slug];
@@ -25,7 +33,11 @@ export default function Post({ slug }) {
           <div styleName="title">
             {post.title}
           </div>
-          <div styleName="body" dangerouslySetInnerHTML={{ __html: post.body }} />
+          <div
+            styleName="body"
+            dangerouslySetInnerHTML={{ __html: post.body }}
+            onClick={onClick}
+          />
         </div>
       </div>
     </div>
