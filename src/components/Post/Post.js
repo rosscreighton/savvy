@@ -38,6 +38,10 @@ export default function Post({ slug }) {
             dangerouslySetInnerHTML={{ __html: post.body }}
             onClick={onClick}
           />
+          <div styleName="other-links">
+            <a href="/request">Write a Savvy</a>
+            <a href="/request">Request a Savvy</a>
+          </div>
         </div>
       </div>
     </div>

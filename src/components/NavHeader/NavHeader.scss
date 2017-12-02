@@ -17,4 +17,9 @@
   @include breakpoint-desktop {
     font-size: 26px;
   }
+
+  a {
+    color: #EFEFEF;
+    text-decoration: none;
+  }
 }

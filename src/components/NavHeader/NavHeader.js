@@ -5,7 +5,7 @@ export default function NavHeader() {
   return (
     <div styleName="container">
       <div styleName="content">
-        Savvy
+        <a href="/">Savvy</a>
       </div>
     </div>
   );

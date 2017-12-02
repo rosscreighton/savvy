@@ -1,0 +1,12 @@
+@import '../../stylesheets/variables.scss';
+@import '../../stylesheets/helpers.scss';
+
+.button {
+  @include centered-flex-row;
+  border-radius: 4px;
+  background-color: $aqua-green;
+  color: white;
+  padding: 15px 0px;
+
+  &:hover { cursor: pointer; }
+}
